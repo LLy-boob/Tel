@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ultimate Pong</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="scoreboard">
+    <span id="player-score">0</span> : <span id="ai-score">0</span>
+  </div>
+  <div id="controls">
+    <button id="pauseBtn">Pause</button>
+    <button id="resumeBtn" style="display:none;">Resume</button>
+    <button id="resetBtn">Reset</button>
+    <button id="modeBtn">2 Player: Off</button>
+    <button id="soundBtn">Sound: On</button>
+    <button id="themeBtn">Theme: Light</button>
+  </div>
+  <canvas id="pong" width="1024" height="600"></canvas>
+  <div id="gameover" style="display:none;">
+    <h2 id="winner"></h2>
+    <button onclick="window.location.reload()">Play Again</button>
+  </div>
+  <audio id="beep" src="https://cdn.pixabay.com/audio/2022/10/16/audio_12c6fae8b1.mp3"></audio>
+  <audio id="score" src="https://cdn.pixabay.com/audio/2022/10/16/audio_1453b3b3e6.mp3"></audio>
+  <audio id="powerup" src="https://cdn.pixabay.com/audio/2023/03/31/audio_12e1bd1b50.mp3"></audio>
+  <script src="pong.js"></script>
+</body>
+</html>
